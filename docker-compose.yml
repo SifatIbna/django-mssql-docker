@@ -1,8 +1,8 @@
-version: "3.2"
+version: "3.8"
 services:
   app:
+    image: sifatibnaamin/django-mssql-base:latest
     build:
-      context: ./app
+      context: .
     ports:
       - "8000:8000"
-      - "1433:1433"
